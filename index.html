@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youcognize</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #000010;
+            color: #FFD700;
+        }
+
+        header {
+            background-color: #000;
+            padding: 15px 0;
+            border-bottom: 2px solid #FFD700;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: #FFD700;
+        }
+
+        nav a {
+            color: #FFD700;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238') center/cover no-repeat;
+            padding: 100px 20px;
+            text-align: center;
+            color: #FFD700;
+        }
+
+        .hero-text {
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-content img {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .service img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .testimonial {
+            background-color: #111;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button.btn {
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000;
+            border-top: 2px solid #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Youcognize</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Youcognize</h1>
+        <p>Empowering Education and Innovation</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="About Us">
+        <p>We at Youcognize are dedicated to transforming education with modern solutions and expert services to help institutions achieve excellence.</p>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Service 1">
+            <h3>Principal & Teacher Recruitment</h3>
+            <p>Connecting the best educators with leading institutions.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Service 2">
+            <h3>Professional Training</h3>
+            <p>Enhancing skills and expertise for teachers and principals.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335" alt="Service 3">
+            <h3>Events Solutions</h3>
+            <p>Organizing impactful educational events and conferences.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Youcognize. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
